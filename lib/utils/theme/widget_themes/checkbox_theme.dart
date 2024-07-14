@@ -3,22 +3,22 @@ import '../../constants/colors.dart';
 import '../../constants/sizes.dart';
 
 /// Custom Class for Light & Dark Text Themes
-class TCheckboxTheme {
-  TCheckboxTheme._(); // To avoid creating instances
+class MyCheckboxTheme {
+  MyCheckboxTheme._(); // To avoid creating instances
 
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
-    checkColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
-        return TColors.white;
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(MySizes.xs)),
+    checkColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
+        return MyColors.white;
       } else {
-        return TColors.black;
+        return MyColors.black;
       }
     }),
-    fillColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
-        return TColors.primary;
+    fillColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
+        return MyColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -27,17 +27,17 @@ class TCheckboxTheme {
 
   /// Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
-    checkColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
-        return TColors.white;
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(MySizes.xs)),
+    checkColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
+        return MyColors.white;
       } else {
-        return TColors.black;
+        return MyColors.black;
       }
     }),
-    fillColor: MaterialStateProperty.resolveWith((states) {
-      if (states.contains(MaterialState.selected)) {
-        return TColors.primary;
+    fillColor: WidgetStateProperty.resolveWith((states) {
+      if (states.contains(WidgetState.selected)) {
+        return MyColors.primary;
       } else {
         return Colors.transparent;
       }

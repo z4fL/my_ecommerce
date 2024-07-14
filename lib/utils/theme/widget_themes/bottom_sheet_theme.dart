@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:my_ecommerce/utils/constants/colors.dart';
 
-class TBottomSheetTheme {
-  TBottomSheetTheme._();
+class MyBottomSheetTheme {
+  MyBottomSheetTheme._();
 
   static BottomSheetThemeData lightBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: TColors.white,
-    modalBackgroundColor: TColors.white,
+    backgroundColor: MyColors.white,
+    modalBackgroundColor: MyColors.white,
     constraints: const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
 
   static BottomSheetThemeData darkBottomSheetTheme = BottomSheetThemeData(
     showDragHandle: true,
-    backgroundColor: TColors.black,
-    modalBackgroundColor: TColors.black,
+    backgroundColor: MyColors.black,
+    modalBackgroundColor: MyColors.black,
     constraints: const BoxConstraints(minWidth: double.infinity),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
   );
